@@ -31,13 +31,11 @@ public class Selection : MonoBehaviour{
                 Vector3 pos = hit.point;
                 int x = (int) Mathf.Round(pos.x / 2) * 2;
                 int z = (int)Mathf.Round(pos.z / 2) * 2;
-
-
+                
                 pos = new Vector3(x, landscape.GetPositionHeight(hit.point.x,hit.point.z), z);
 
                 this.transform.position = pos;
-                
-                print(hit.point);
+
             }
         }
     }

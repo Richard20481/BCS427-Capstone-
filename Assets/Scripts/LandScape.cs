@@ -62,9 +62,11 @@ public class LandScape : MonoBehaviour{
         for (int i = 0; i < Hello.Length; i++){
            
             if (Hello[i].y > -.5f){
-                
+                GameObject x = new GameObject();
+                x.name = i.ToString();
                 tmp = (Mathf.PerlinNoise(Hello[i].x/16.0f, Hello[i].z/16.0f) * this.height);
                 Hello[i] = new Vector3(Mathf.Round(Hello[i].x), Mathf.Round(tmp), Mathf.Round(Hello[i].z));
+                x.transform.position = Hello[i];
                 
             }
         }
@@ -129,15 +131,15 @@ public class LandScape : MonoBehaviour{
 
     public float GetPositionHeight(float x, float z)
     {
-        int x_index = (int)(Mathf.Abs(14 - x) / 2);
-        int z_index = (int)(Mathf.Abs(14 - z) / 2);
-
+        int x_index = (int)(Mathf.Abs(15 - x)  / 2.0f);
+        int z_index = (int)(Mathf.Abs(15 - z)  / 2.0f);
+        print(x_index.ToString() + ", " + z_index.ToString());
         Vector3[] verts = this._map.GetComponent<MeshFilter>().mesh.vertices;
 
-        Vector3 a =  this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 17]) ; //a
-        Vector3 b = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 18]); //b
-        Vector3 c = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 1]);  //c
-        Vector3 d = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 0]);  //d
+        Vector3 a =  this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 17]) ; //a
+        Vector3 b = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 18]); //b
+        Vector3 c = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 1]);  //c
+        Vector3 d = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 0]);  //d
 
         Vector3 e = new Vector3(x, 0, z);
 
