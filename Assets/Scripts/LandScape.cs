@@ -16,7 +16,9 @@ public class LandScape : MonoBehaviour{
     private GameObject _map;
     public int size;
     public byte height;
-    private Vector3[] Hello;
+
+    [HideInInspector]
+    public Vector3[] Hello;
 
     public GameObject gm_16;
 
@@ -30,7 +32,8 @@ public class LandScape : MonoBehaviour{
             case ((int)landScapeSizes.LS_SIZE_S):
 
                 //Generation Terrain with no perlin noise being applyed...
-                _map = Instantiate(this.gm_16, new Vector3(-1.0f, 0.5f, -1.0f), Quaternion.Euler(-90.0f, 0.0f, 0.0f), this.transform);
+                _map = Instantiate(this.gm_16, this.transform);
+                // _map.transform.position = new Vector3(-1.0f, 0.5f, -1.0f);
                 break;
 
             case ((int)landScapeSizes.LS_SIZE_M):
@@ -51,18 +54,18 @@ public class LandScape : MonoBehaviour{
         //Also the Y and Z axis are switched!!!
         Hello = this._map.GetComponent<MeshFilter>().mesh.vertices;
         float tmp = 1.0f;
-        
+
         /**
          *
          */
-        for(int i = 0; i < Hello.Length; i++){
-
-            if(Hello[i].z > 0.0f){
-
-                tmp = (Mathf.PerlinNoise(Hello[i].x/16.0f, Hello[i].y/16.0f) * this.height);
-                tmp = Mathf.Round(tmp);
-
-                Hello[i] += new Vector3(0.0f, 0.0f, tmp);
+        print(Hello.Length);
+        for (int i = 0; i < Hello.Length; i++){
+           
+            if (Hello[i].y > -.5f){
+                
+                tmp = (Mathf.PerlinNoise(Hello[i].x/16.0f, Hello[i].z/16.0f) * this.height);
+                Hello[i] = new Vector3(Mathf.Round(Hello[i].x), Mathf.Round(tmp), Mathf.Round(Hello[i].z));
+                
             }
         }
 
@@ -114,7 +117,37 @@ public class LandScape : MonoBehaviour{
 
         //this._map.GetComponent<MeshFilter>().mesh.uv = uvs;
         return 0;
-    }   
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;
+        for (int i = 0; i < Hello.Length; i++)
+        {
+            Gizmos.DrawSphere(Hello[i], 0.1f);
+        }
+    }
+
+    public float GetPositionHeight(float x, float z)
+    {
+        int x_index = (int)(Mathf.Abs(14 - x) / 2);
+        int z_index = (int)(Mathf.Abs(14 - z) / 2);
+
+        Vector3[] verts = this._map.GetComponent<MeshFilter>().mesh.vertices;
+
+        Vector3 a =  this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 17]) ; //a
+        Vector3 b = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 18]); //b
+        Vector3 c = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 1]);  //c
+        Vector3 d = this._map.transform.TransformPoint(verts[(x_index + z_index * 16) + 0]);  //d
+
+        Vector3 e = new Vector3(x, 0, z);
+
+        float qa = (d.z - e.z) / (d.z - a.z) * a.y + (e.z - a.z) / (d.z - a.z) * d.y;
+        float qb = (c.z - e.z) / (c.z - b.z) * b.y + (e.z - b.z) / (c.z - b.z) * c.y;
+
+        float y = (b.x - e.x) / (b.x - a.x) * qa + (e.x - a.x) / (b.x - a.x) * qb;
+        return y;
+    }
+
 
     /**
      * Start is called before the first frame update.
