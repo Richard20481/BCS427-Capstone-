@@ -8,6 +8,8 @@ using static ToggleEnumState;
 public class ToggleEnumState : MonoBehaviour, IPointerClickHandler 
 {
     GameObject[] buildToolbarOptions;
+    private AudioSource selectClick;
+    private AudioSource deselectClick;
 
     public enum State
     {
@@ -34,8 +36,13 @@ public class ToggleEnumState : MonoBehaviour, IPointerClickHandler
             childTextObject.SetActive(true);
         }
     }
+    private void Awake()
+    {
+        selectClick = GameObject.Find("selectAudio").GetComponent<AudioSource>();
+        deselectClick = GameObject.Find("de-selectAudio").GetComponent<AudioSource>();
+    }
 
-   
+
     void Update()
     {
        
@@ -64,6 +71,7 @@ public class ToggleEnumState : MonoBehaviour, IPointerClickHandler
             childTextObject.SetActive(false);
             gameObject.GetComponent<Image>().color = new Color(255, 255, 255, 100);
             state = State.hide;
+            deselectClick.Play();
         }
         else if (state == State.hide)
         {
@@ -75,13 +83,13 @@ public class ToggleEnumState : MonoBehaviour, IPointerClickHandler
             childTextObject.SetActive(true);
             gameObject.GetComponent<Image>().color = new Color32(66, 188, 236, 100);
             state = State.show;
+            selectClick.Play();
         }
     }
     private void setEnumHide()
     {
         state = State.hide;
         childTextObject.SetActive(false);
-
     }
     private void setEnumshow()
     {

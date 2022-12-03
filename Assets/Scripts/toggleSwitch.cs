@@ -7,6 +7,8 @@ public class toggleSwitch : MonoBehaviour
     public GameObject switch1;
     public GameObject switch2;
 
+    private AudioSource selectClick;
+    private AudioSource deselectClick;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,11 @@ public class toggleSwitch : MonoBehaviour
     void Update()
     {
         
+    }
+    private void Awake()
+    {
+        selectClick = GameObject.Find("selectAudio").GetComponent<AudioSource>();
+        deselectClick = GameObject.Find("de-selectAudio").GetComponent<AudioSource>();
     }
     public void switchAppear()
     {
@@ -54,11 +61,13 @@ public class toggleSwitch : MonoBehaviour
         if((switch1.active == false) && (switch2.active == false))
         {
             switch1.active = true;
+            selectClick.Play();
         }
         else if (switch1.active == true || switch2.active == true)
         {
             switch1.SetActive(false);
             switch2.SetActive(false);
+            deselectClick.Play();
         }
     }
 }
