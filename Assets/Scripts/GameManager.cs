@@ -5,19 +5,24 @@ using UnityEngine;
 public class GameManager : MonoBehaviour{
 
     /**
-     * Public attributes.
+     * Public attributes game objects.
      */
     public static GameManager gm;
+    public Light sun;
 
+    /**
+     * Public attributes primitives.
+     */
     public float Income = 0.0f;
     public float Expense = 0.0f;
     public float Money = 0.0f;
     public bool Bankrupt = false;
 
     /**
-     * Private attributes.
+     * Private attributes primitives.
      */
     private float FrameTime = 0;
+    private float SunRotation = 0.0f;
 
     /**
      * Start is called before the first frame update.
@@ -31,8 +36,10 @@ public class GameManager : MonoBehaviour{
         this.setExpense(this.Expense);
         this.setMoney(this.Money);
 
-        this.Bankrupt = false;
+        this.sun.enabled = true;
+        this.SunRotation = (Time.deltaTime * 100.5f);
 
+        this.Bankrupt = false;
         if(gm != null) gm = this.gameObject.GetComponent<GameManager>();
     }
 
@@ -43,6 +50,7 @@ public class GameManager : MonoBehaviour{
 
         if(this.FrameTime >= 1.0f){
 
+            this.sun.transform.Rotate(new Vector3(this.sun.transform.rotation.x + this.SunRotation, 0.0f, this.sun.transform.rotation.z + this.SunRotation));
             this.Money += (this.Income - this.Expense);
             this.FrameTime = 0.0f;
 

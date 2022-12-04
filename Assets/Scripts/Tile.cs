@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tile : MonoBehaviour{
-    private LandScape _gm;
-    private bool _isCorner = false;
-    private bool _isEage = false;
-    private bool _isSelected = false;
-    private bool _isWater = false;
-    private bool _isfree = true;
     private int _x = 0;
     private int _y = 0;
-
-    //This is stupid but o well.
 
     //Constructor...
     public Tile(){
@@ -53,6 +45,8 @@ public class Tile : MonoBehaviour{
     //If the tile is selected.
     void OnMouseOver(){
 
+        print("hello");
+
         //this.GetComponent<MeshRenderer>().enabled = true;
         //this._isSelected = true;
         this.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
@@ -61,12 +55,13 @@ public class Tile : MonoBehaviour{
     //Read more later...
     void onMouseUp(){
 
-        
+        print("wee");        
     }
 
     //If the tile not selected.
     void OnMouseExit(){
 
+        print("err");
         //this._isSelected = false;
         //this.GetComponent<MeshRenderer>().enabled = false;
         this.GetComponent<Renderer>().material.SetColor("_Color", Color.gray);
