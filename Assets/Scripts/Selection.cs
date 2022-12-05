@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.EventSystems;
 
 public class Selection : MonoBehaviour{
-    
+
+    public GameObject selectedBuilding;
+
+    private BoxCollider boundsTrigger;
+
     // Start is called before the first frame update.
     void Start(){
+        boundsTrigger = GetComponent<BoxCollider>();
         Mesh mesh = this.GetComponent<MeshFilter>().mesh;
         int[] tris = new int[6]
                {
@@ -24,7 +31,8 @@ public class Selection : MonoBehaviour{
         var cam = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if(Physics.Raycast(cam, out hit, 100.0f)){
+        if(Physics.Raycast(cam, out hit, 100.0f, ~(1<<LayerMask.NameToLayer("BuildingBounds"))) && !IsPointerOverUIElement())
+        {
 
             if(hit.collider.tag == "Map16"){
 
@@ -41,13 +49,20 @@ public class Selection : MonoBehaviour{
                 int x = (int) Mathf.Round(pos.x / 2) * 2;
                 int z = (int)Mathf.Round(pos.z / 2) * 2;
 
+
                 //pos = new Vector3(x, 0, z);
 
                 Mesh mesh = this.GetComponent<MeshFilter>().mesh;
                 Vector3[] verts = mesh.vertices;
                 Vector3[] tile_verts = landscape.GetTileVerts(hit.point.x,hit.point.z);
 
-                float max_y = Mathf.Max(tile_verts[0].y, tile_verts[1].y, tile_verts[2].y, tile_verts[3].y);
+                Vector3 mid = Vector3.zero;
+                float maxY = 0;
+                if (tile_verts.Length >= 3)
+                {
+                    mid = (tile_verts[0] + tile_verts[3]) / 2;
+                    this.transform.position = mid;
+                }
 
                 for (int i = 0; i < verts.Length; i++)
                 {
@@ -55,20 +70,55 @@ public class Selection : MonoBehaviour{
                     verts[i] = this.transform.InverseTransformPoint(tile_verts[i]) + transform.up*.01f;
                 }
                 mesh.vertices = verts;
-
                 mesh.RecalculateBounds();
+
+
+                if (Input.GetMouseButtonDown(0)){
+                    landscape.PlaceTile(hit.point.x, hit.point.z, selectedBuilding);
+                }else if (Input.GetMouseButtonDown(2))
+                {
+                    landscape.RotateTile(hit.point.x, hit.point.z);
+                }else if (Input.GetMouseButtonDown(1))
+                {
+                    landscape.DeleteTile(hit.point.x, hit.point.z);
+                }
+
                 
 
-                this.transform.position = pos;
+                
 
             }
         }
     }
-    void OnDrawGizmosSelected()
+
+
+    public bool IsPointerOverUIElement()
     {
-        // Draw a yellow sphere at the transform's position
-        Gizmos.color = Color.yellow;
-        
-        Gizmos.DrawSphere(transform.position, 1);
+        return IsPointerOverUIElement(GetEventSystemRaycastResults());
     }
+
+    private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
+    {
+        for (int index = 0; index < eventSystemRaysastResults.Count; index++)
+        {
+            RaycastResult curRaysastResult = eventSystemRaysastResults[index];
+            if (curRaysastResult.gameObject.layer == LayerMask.NameToLayer("UI"))
+                return true;
+        }
+        return false;
+    }
+
+
+    //Gets all event system raycast results of current mouse or touch position.
+    static List<RaycastResult> GetEventSystemRaycastResults()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> raysastResults = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, raysastResults);
+        return raysastResults;
+    }
+
+
+
 }

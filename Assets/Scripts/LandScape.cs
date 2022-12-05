@@ -25,6 +25,10 @@ public class LandScape : MonoBehaviour{
 
     public GameObject gm_16;
 
+    public GameObject[,] tileArray = new GameObject[16,16];
+
+
+
     private int GenTerain(){
 
         print("Generating Terrain...");
@@ -131,15 +135,14 @@ public class LandScape : MonoBehaviour{
 
     public float GetPositionHeight(float x, float z)
     {
-        int x_index = (int)(Mathf.Abs(15 - x)  / 2.0f);
-        int z_index = (int)(Mathf.Abs(15 - z)  / 2.0f);
-        print(x_index.ToString() + ", " + z_index.ToString());
+        Vector2Int coords = GetTileIndex(x, z);
         Vector3[] verts = this._map.GetComponent<MeshFilter>().mesh.vertices;
 
-        Vector3 a =  this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 17]) ; //a
-        Vector3 b = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 18]); //b
-        Vector3 c = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 1]);  //c
-        Vector3 d = this._map.transform.TransformPoint(verts[(x_index + z_index * 17) + 0]);  //d
+        int start_ind = coords.x + coords.y * 17;
+        Vector3 a =  this._map.transform.TransformPoint(verts[start_ind + 17]) ; //a
+        Vector3 b = this._map.transform.TransformPoint(verts[start_ind + 18]); //b
+        Vector3 c = this._map.transform.TransformPoint(verts[start_ind + 1]);  //c
+        Vector3 d = this._map.transform.TransformPoint(verts[start_ind + 0]);  //d
 
         Vector3 e = new Vector3(x, 0, z);
 
@@ -150,15 +153,12 @@ public class LandScape : MonoBehaviour{
     }
     public Vector3[] GetTileVerts(float x, float z)
     {
-        int x_index = (int)(Mathf.Abs(15 - x) / 2.0f);
-        int z_index = (int)(Mathf.Abs(15 - z) / 2.0f);
-        x_index = Mathf.Clamp(x_index, 0, 15);
-        z_index = Mathf.Clamp(z_index, 0, 15);
+        Vector2Int coords = GetTileIndex(x, z);
 
-        print(x_index.ToString() + ", " + z_index.ToString());
+        // print(coords.x.ToString() + ", " + coords.y.ToString());
         Vector3[] verts = this._map.GetComponent<MeshFilter>().mesh.vertices;
 
-        int start_ind = x_index + z_index * 17;
+        int start_ind = coords.x + coords.y * 17;
         Vector3 a = this._map.transform.TransformPoint(verts[start_ind + 0]); //a
         Vector3 b = this._map.transform.TransformPoint(verts[start_ind + 1]); //b
         Vector3 c = this._map.transform.TransformPoint(verts[start_ind + 17]);  //c
@@ -167,6 +167,58 @@ public class LandScape : MonoBehaviour{
         return new Vector3[] {a,b,c,d};
     }
 
+    public Vector2Int GetTileIndex(float x, float z)
+    {
+        int x_index = (int)(Mathf.Abs(15 - x) / 2.0f);
+        int z_index = (int)(Mathf.Abs(15 - z) / 2.0f);
+        x_index = Mathf.Clamp(x_index, 0, 15);
+        z_index = Mathf.Clamp(z_index, 0, 15);
+
+        return new Vector2Int((int)x_index, (int)z_index);
+    }
+
+    public bool PlaceTile(float x, float z, GameObject tile)
+    {
+        Vector2Int coords = GetTileIndex(x, z);
+
+        if (tileArray[coords.x, coords.y])
+        {
+            return false;
+        }
+        
+        if (tile.tag.Equals("Building"))
+        {
+            Vector3[] tileVerts = GetTileVerts(x, z);
+            float maxY = Mathf.Max(tileVerts[0].y, tileVerts[1].y, tileVerts[2].y, tileVerts[3].y);
+            Vector3 mid = (tileVerts[0] + tileVerts[3]) / 2;
+            mid.y = maxY + .1f;
+            GameObject new_object = Instantiate(tile, mid, Quaternion.identity);
+
+            tileArray[coords.x, coords.y] = new_object;
+            return true;
+        }
+        return false;
+    }
+
+    public void RotateTile(float x, float z)
+    {
+        Vector2Int coords = GetTileIndex(x, z);
+        GameObject selectedTile = tileArray[coords.x, coords.y];
+        if (selectedTile)
+        {
+            selectedTile.transform.GetChild(0).Rotate(new Vector3(0,90,0), Space.World);
+        }
+    }
+
+    public void DeleteTile(float x, float z)
+    {
+        Vector2Int coords = GetTileIndex(x, z);
+        GameObject selectedTile = tileArray[coords.x, coords.y];
+        if (selectedTile)
+        {
+            Destroy(selectedTile);
+        }
+    }
 
     /**
      * Start is called before the first frame update.
