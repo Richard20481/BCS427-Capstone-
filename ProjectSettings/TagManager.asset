@@ -11,11 +11,14 @@ TagManager:
   - BuildMenuTransparencyChangeable
   - Building
   - Selector
+  - Road
+  - Landscape
+  - GameStateOver
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - post
   - Water
   - UI
   - BuildingBounds

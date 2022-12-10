@@ -46,9 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c917283a9b6eff40a5cfaefd7ae9878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 50
-  income: 5
-  population: 5
+  buildingName: Mansion
+  cost: 150
+  expense: 3
+  income: 3
+  population: 6
+  demand: 1
 --- !u!1001 &2325797414897350583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,40 +130,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4763871c347f94b4fb9aa1f9a6795141, type: 3}
   m_PrefabInstance: {fileID: 2325797414897350583}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3208689102320257766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4763871c347f94b4fb9aa1f9a6795141, type: 3}
-  m_PrefabInstance: {fileID: 2325797414897350583}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &7881566388809872798
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3208689102320257766}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &794292689427713352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3208689102320257766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.7857587, y: 2.5109155, z: 2.5677252}
-  m_Center: {x: -0.04677814, y: 0.0067939693, z: 0.2838626}
 --- !u!1001 &6339272317621105581
 PrefabInstance:
   m_ObjectHideFlags: 0

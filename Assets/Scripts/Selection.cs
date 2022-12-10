@@ -1,16 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 using UnityEngine.EventSystems;
 
 public class Selection : MonoBehaviour{
 
     public GameObject selectedBuilding;
-
+    public AudioSource place_sound;
     private BoxCollider boundsTrigger;
-
+    public GameObject place_particle;
     // Start is called before the first frame update.
     void Start(){
         boundsTrigger = GetComponent<BoxCollider>();
@@ -72,9 +69,28 @@ public class Selection : MonoBehaviour{
                 mesh.vertices = verts;
                 mesh.RecalculateBounds();
 
+                if (!selectedBuilding)
+                {
+                    return;
+                }
+
+                BuildingScript bs = selectedBuilding.GetComponent<BuildingScript>();
+                if (!bs)
+                {
+                    bs = selectedBuilding.GetComponent<RoadScript>() as BuildingScript;
+                }
 
                 if (Input.GetMouseButtonDown(0)){
-                    landscape.PlaceTile(hit.point.x, hit.point.z, selectedBuilding);
+                    if(GameManager.gm.Money >= bs.cost)
+                    {
+                        if (landscape.PlaceTile(hit.point.x, hit.point.z, selectedBuilding))
+                        {
+                            GameManager.gm.Money -= bs.cost;
+                            place_sound.Play();
+                            Instantiate(place_particle, transform.position, Quaternion.identity);
+                        }
+                    }
+                    
                 }else if (Input.GetMouseButtonDown(2))
                 {
                     landscape.RotateTile(hit.point.x, hit.point.z);

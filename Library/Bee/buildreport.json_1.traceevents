@@ -1,0 +1,582 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1670657764449510, "dur": 733046, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657764449716, "dur": 1276, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657764450993, "dur": 32088, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657764483083, "dur": 415058, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657764898144, "dur": 270105, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657765168251, "dur": 14306, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657765182937, "dur": 8, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1670657764786809, "dur": 101428, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764787591, "dur": 31259, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764876197, "dur": 3543, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764879743, "dur": 8488, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764880260, "dur": 7430, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764891571, "dur": 1009, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1670657764890924, "dur": 1672, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657765182996, "dur": 96, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1670657764930064, "dur":1498, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657764931568, "dur":47, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1670657764931622, "dur":15, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1670657764931639, "dur":720, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1670657764932382, "dur":474, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657764932856, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765155954, "dur":113, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156067, "dur":38, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156105, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156109, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156132, "dur":245, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156377, "dur":38, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156415, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156416, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156421, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156423, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156432, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156434, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156442, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156443, "dur":22, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156465, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156467, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156487, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156488, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156492, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156494, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156517, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156518, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156523, "dur":43, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156566, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156571, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156573, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156585, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156586, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156590, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156593, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156597, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156598, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156605, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156614, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765156633, "dur":2640, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1670657764932945, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764932946, "dur":3651, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764936597, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1670657764936728, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764937711, "dur":1815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1670657764939546, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1670657764939610, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764939781, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1670657764940715, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764940792, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764940964, "dur":2218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764943199, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone.exe" }}
+,{ "pid":12345, "tid":1, "ts":1670657764943232, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764943235, "dur":1384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone.exe" }}
+,{ "pid":12345, "tid":1, "ts":1670657764944639, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764944665, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764944826, "dur":2718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764947569, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764947604, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764947610, "dur":2375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764950020, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764950068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764950074, "dur":8713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764958818, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764958872, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764958878, "dur":4207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764963131, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764963172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764963180, "dur":3748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764966953, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764966985, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657764966991, "dur":10324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657764977346, "dur":37750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765015136, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765015147, "dur":1605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765016778, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765016806, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765016812, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765017937, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765017968, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765017975, "dur":1004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019001, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019026, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019032, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019848, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765019876, "dur":2354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765022252, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765022281, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765022286, "dur":2688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765025005, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765025040, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765025047, "dur":7249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1670657765032320, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1670657765032345, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765032350, "dur":2980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1670657765035357, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1670657765035398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1670657765035404, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1670657765037420, "dur":118530, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764933746, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764933747, "dur":2878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764936626, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1670657764936775, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764943646, "dur":2038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1670657764945705, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764945737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764945743, "dur":2651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764948417, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764948446, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764948451, "dur":2405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764950879, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764950909, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764950915, "dur":8035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764959277, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764959383, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764959389, "dur":11909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764971323, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764971374, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657764971380, "dur":4141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657764975545, "dur":74076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657765049625, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1670657765049637, "dur":1001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1670657765050665, "dur":105350, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764933479, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764933480, "dur":3147, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764936627, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1670657764936855, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764945473, "dur":3926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1670657764949425, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764949453, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764949458, "dur":7436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764956926, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764956964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764956972, "dur":3272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764960290, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764960401, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764960411, "dur":5377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764965815, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764965842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764965857, "dur":8027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764973905, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764973931, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657764973937, "dur":9581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657764983545, "dur":170728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657765154292, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1670657765154301, "dur":1569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1670657765155888, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":3, "ts":1670657765155889, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764933634, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764933634, "dur":2960, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764936601, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1670657764936760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764942535, "dur":1386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1670657764943943, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1670657764944016, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764944302, "dur":13643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1670657764957971, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657764957998, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764958004, "dur":8272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657764966306, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657764966338, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657764966345, "dur":7248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657764973637, "dur":78856, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657765052496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1670657765052502, "dur":1073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1670657765053592, "dur":102388, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764933869, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764933870, "dur":2739, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764936611, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1670657764936813, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764947056, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1670657764948660, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764948691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764948697, "dur":2340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764951061, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764951087, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764951092, "dur":7813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764958931, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764958964, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764958969, "dur":3791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764962794, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764962920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764962951, "dur":3592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764966574, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764966606, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764966612, "dur":16880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764983519, "dur":681, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764984221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657764984228, "dur":613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657764984865, "dur":86172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657765071041, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1670657765071048, "dur":1554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1670657765072624, "dur":83332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764933999, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764933999, "dur":2603, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764936605, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1670657764936766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764942601, "dur":1620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1670657764944246, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764944268, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764944511, "dur":2667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764947197, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764947222, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764947226, "dur":2371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764949621, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764949647, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764949653, "dur":7654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764957350, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764957395, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764957406, "dur":9163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764966599, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764966631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657764966638, "dur":11335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657764978003, "dur":24857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765002866, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765002876, "dur":810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765003711, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765003739, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765003746, "dur":725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765004497, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765004526, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765004532, "dur":2596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765007152, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765007177, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765007183, "dur":8463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765015682, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765015707, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765015713, "dur":2491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765018242, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765018282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765018319, "dur":1190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765019531, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765019558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765019564, "dur":1653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765021252, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765021283, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765021290, "dur":3721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765025042, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765025078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765025085, "dur":1808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1670657765026921, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1670657765026949, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1670657765026955, "dur":21410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1670657765048399, "dur":107592, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764932782, "dur":168, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764932951, "dur":3674, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764936625, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1670657764936863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764945980, "dur":4106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1670657764950130, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764950167, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764950173, "dur":8505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764958705, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764958732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764958738, "dur":3818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764962580, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764962606, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764962612, "dur":2215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764964852, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764964877, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764964883, "dur":8039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764972990, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764973020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657764973026, "dur":4913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657764977966, "dur":53394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657765031364, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657765031372, "dur":2575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1670657765034086, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1670657765034114, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1670657765034119, "dur":4234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1670657765038388, "dur":117607, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764932911, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764932912, "dur":3674, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764936598, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1670657764936599, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764936770, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1670657764936774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764943421, "dur":920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/app.info" }}
+,{ "pid":12345, "tid":8, "ts":1670657764944343, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764944374, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764944435, "dur":2805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764947258, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764947285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764947291, "dur":2448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764949764, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764949879, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764949884, "dur":7439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764957358, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764957395, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764957403, "dur":6554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764963995, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764964036, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764964082, "dur":8418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764972610, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764972647, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657764972653, "dur":6779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657764979454, "dur":39127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765018586, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765018595, "dur":1030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765019665, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765019703, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765019708, "dur":2019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765021749, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765021773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765021779, "dur":1393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765023202, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765023238, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765023257, "dur":1947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1670657765025246, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":8, "ts":1670657765025351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765025959, "dur":2544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":8, "ts":1670657765028527, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":8, "ts":1670657765028555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765028561, "dur":2925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":8, "ts":1670657765031509, "dur":1182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1670657765032697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765032722, "dur":3048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1670657765035812, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1670657765035856, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1670657765035865, "dur":2629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1670657765038524, "dur":117761, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764933289, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764933290, "dur":3301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764936598, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":9, "ts":1670657764936726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764937645, "dur":2034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":9, "ts":1670657764939706, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1670657764939775, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764939780, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1670657764940782, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764940853, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764940977, "dur":15940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764956957, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764957064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764957073, "dur":3397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764960513, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764960561, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764960571, "dur":4429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764965034, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764965068, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657764965074, "dur":8335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657764973436, "dur":48543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765021983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657765021989, "dur":1533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765023549, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765023596, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657765023603, "dur":1565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765025202, "dur":58954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765084161, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1670657765084169, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1670657765085046, "dur":70947, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764933137, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764933137, "dur":3486, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764936623, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1670657764936811, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764944873, "dur":4506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1670657764949412, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764949443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764949449, "dur":6876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764956358, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764956380, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764956392, "dur":7571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764963991, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764964025, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764964031, "dur":7637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764971696, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764971720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764971726, "dur":7980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764979732, "dur":1115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764980850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764980860, "dur":708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764981587, "dur":569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764982159, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657764982166, "dur":1084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657764983272, "dur":31811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765015091, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765015141, "dur":1625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765016790, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765016818, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765016823, "dur":4438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765021302, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765021342, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765021359, "dur":3460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765024862, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765024919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765024929, "dur":1499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1670657765026451, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":10, "ts":1670657765026476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765026481, "dur":2459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":10, "ts":1670657765028970, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1670657765028994, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1670657765029023, "dur":11803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1670657765040852, "dur":115140, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764933625, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764933625, "dur":2989, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764936616, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1670657764936757, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764940087, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1670657764941023, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657764941093, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764941096, "dur":25261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657764966403, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657764966457, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657764966490, "dur":12302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657764978818, "dur":44104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657765022926, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765022933, "dur":873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657765023832, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657765023858, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765023863, "dur":2474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1670657765026361, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":11, "ts":1670657765026388, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765026426, "dur":1611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":11, "ts":1670657765028061, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765028085, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765028090, "dur":1297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765029411, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765029439, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765029445, "dur":1801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765031269, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1670657765031350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765031356, "dur":1408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":11, "ts":1670657765032800, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/resources.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765032836, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1670657765032873, "dur":4179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/resources.assets" }}
+,{ "pid":12345, "tid":11, "ts":1670657765037076, "dur":118878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764933402, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764933403, "dur":3216, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764936622, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1670657764936736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764939862, "dur":822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1670657764940708, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":12, "ts":1670657764940776, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764940780, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":12, "ts":1670657764941991, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":12, "ts":1670657764942014, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764942017, "dur":7150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":12, "ts":1670657764949186, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764949219, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764949224, "dur":6447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764955699, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764955731, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764955737, "dur":3674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764959458, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764959485, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764959490, "dur":4860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764964376, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764964423, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764964429, "dur":7789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764972244, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764972277, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764972282, "dur":4751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764977067, "dur":904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764977992, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657764978002, "dur":3144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657764981170, "dur":48658, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657765029832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657765029844, "dur":3550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1670657765033429, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level1" }}
+,{ "pid":12345, "tid":12, "ts":1670657765033457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657765033462, "dur":2495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level1" }}
+,{ "pid":12345, "tid":12, "ts":1670657765035982, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/boot.config" }}
+,{ "pid":12345, "tid":12, "ts":1670657765036066, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1670657765036072, "dur":2980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/boot.config" }}
+,{ "pid":12345, "tid":12, "ts":1670657765039077, "dur":117040, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1670657764933715, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1670657764933715, "dur":2909, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1670657764936624, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1670657764936862, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1670657764947566, "dur":2487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1670657764950081, "dur":117622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":13, "ts":1670657765067707, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1670657765067715, "dur":1348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":13, "ts":1670657765069080, "dur":86914, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764933901, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764933902, "dur":2703, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764936608, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":14, "ts":1670657764936800, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764944485, "dur":2280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":14, "ts":1670657764946787, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764946821, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764946826, "dur":1931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764948780, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764948825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764948832, "dur":2402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764951257, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764951281, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764951287, "dur":7726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764959036, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764959066, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764959072, "dur":4046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764963686, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764963723, "dur":22, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764963794, "dur":8059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764971878, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764971905, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764971910, "dur":5631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764977571, "dur":16405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764993983, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657764993994, "dur":2337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657764996368, "dur":36945, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657765033319, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657765033356, "dur":1780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":14, "ts":1670657765035159, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1670657765035185, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1670657765035190, "dur":1847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1670657765037060, "dur":118915, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764933708, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764933708, "dur":2914, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764936622, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1670657764936791, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764944062, "dur":3265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1670657764947353, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764947381, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764947386, "dur":2339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764949751, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764949828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764949834, "dur":7240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764957129, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764957180, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764957190, "dur":4873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764962165, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764962200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764962207, "dur":8947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764971183, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764971212, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657764971219, "dur":4892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657764976135, "dur":154760, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657765130899, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1670657765130907, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":15, "ts":1670657765132045, "dur":24135, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764933940, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764933940, "dur":2659, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764936602, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1670657764936767, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764943017, "dur":1987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1670657764945028, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764945071, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764945077, "dur":3398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764948517, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764948547, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764948553, "dur":7067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764955652, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764955682, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764955689, "dur":3700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764959413, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764959443, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764959465, "dur":4910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764964426, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764964466, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657764964473, "dur":9249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657764973750, "dur":76193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657765049947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1670657765049955, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/rober/Desktop/Fall2022 Semster/GameDev/newBuild/BCS 427 Capstone_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1670657765051505, "dur":104498, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1670657765160685, "dur":1440, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1670657765183121, "dur": 678, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1670657765182926, "dur": 888, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -1,9 +1,9 @@
-using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering;
+
+
 
 enum landScapeSizes{
 
@@ -26,11 +26,12 @@ public class LandScape : MonoBehaviour{
     public GameObject gm_16;
 
     public GameObject[,] tileArray = new GameObject[16,16];
-
+    public List<GameObject> tiles = new List<GameObject>();
 
 
     private int GenTerain(){
 
+        int seed = Random.Range(-1000,1000);
         print("Generating Terrain...");
 
         //Varifys the map size is withing range.
@@ -40,6 +41,7 @@ public class LandScape : MonoBehaviour{
 
                 //Generation Terrain with no perlin noise being applyed...
                 _map = Instantiate(this.gm_16, this.transform);
+                
                 // _map.transform.position = new Vector3(-1.0f, 0.5f, -1.0f);
                 break;
 
@@ -69,7 +71,7 @@ public class LandScape : MonoBehaviour{
         for (int i = 0; i < Hello.Length; i++){
            
             if (Hello[i].y > -.5f){
-                tmp = (Mathf.PerlinNoise(Hello[i].x/16.0f, Hello[i].z/16.0f) * this.height);
+                tmp = (Mathf.PerlinNoise(Hello[i].x/16.0f + seed, Hello[i].z/16.0f + seed) * this.height);
                 Hello[i] = new Vector3(Mathf.Round(Hello[i].x), Mathf.Round(tmp), Mathf.Round(Hello[i].z));
             }
         }
@@ -177,6 +179,46 @@ public class LandScape : MonoBehaviour{
         return new Vector2Int((int)x_index, (int)z_index);
     }
 
+    public void SpawnCar(GameObject spawn_building)
+    {
+
+        RoadScript spawn = NearestRoad(spawn_building);
+        BuildingScript building = tiles[Random.Range(0, tiles.Count)].GetComponent<BuildingScript>();
+        RoadScript dest = NearestRoad(building.gameObject);
+        print(tiles.Count);
+        if(spawn && dest && spawn != dest)
+        {
+            print("SPAWNED CAR!");
+            spawn.SpawnCar(spawn_building.GetComponent<BuildingScript>().income + building.income, dest.transform.position);
+        }
+    }
+
+    public RoadScript NearestRoad(GameObject building)
+    {
+        Vector2Int coords = GetTileIndex(building.transform.position.x, building.transform.position.z);
+        if (IsRoad(coords.x, coords.y + 1) || IsRoad(coords.x, coords.y - 1) || IsRoad(coords.x - 1, coords.y) || IsRoad(coords.x + 1, coords.y))
+        {
+            print("THERE IS A ROAD!");
+            for (int i = 0; i < 100; i++)
+            {
+                int x = 0 + (Random.Range(-1, 2));
+                int y = 0 + (Random.Range(-1, 2));
+                if(Mathf.Abs(x) + Mathf.Abs(y) == 2)
+                {
+                    continue;
+                }
+
+                if (IsRoad(coords.x + x, coords.y + y))
+                {
+                    return tileArray[coords.x + x, coords.y + y].GetComponent<RoadScript>();
+                }
+
+
+            }
+        }
+        return null;
+    }
+
     public bool PlaceTile(float x, float z, GameObject tile)
     {
         Vector2Int coords = GetTileIndex(x, z);
@@ -195,11 +237,67 @@ public class LandScape : MonoBehaviour{
             GameObject new_object = Instantiate(tile, mid, Quaternion.identity);
 
             tileArray[coords.x, coords.y] = new_object;
+            BuildingScript bs = new_object.GetComponent<BuildingScript>();
+            for (int i = 0; i < bs.demand; i++)
+            {
+                tiles.Add(new_object);
+                
+            }
+            UpdatePop();
+            return true;
+        }else if (tile.tag.Equals("Road"))
+        {
+            Vector3[] tileVerts = GetTileVerts(x, z);
+            Vector3 mid = (tileVerts[0] + tileVerts[3]) / 2;
+            GameObject new_object = Instantiate(tile, mid, Quaternion.identity);
+            RoadScript rs = new_object.GetComponent<RoadScript>();
+            rs.UpdateMesh(this.gameObject);
+            place_road(coords.x, coords.y, rs);
+            
             return true;
         }
         return false;
     }
+    private void UpdatePop()
+    {
+        int pop = 0;
+        List<GameObject> list_pop = tiles.Distinct<GameObject>().ToList();
+        for (int i = 0; i < list_pop.Count; i++)
+        {
+            pop+= list_pop[i].GetComponent<BuildingScript>().population;
+        }
+        GameManager.gm.SetPop(pop);
+    }
+    private void place_road(int x, int y, RoadScript road)
+    {
 
+        tileArray[x,y] = road.gameObject;
+        update_Road(x, y);
+        UpdateNearRoads(x, y);
+
+    }
+    private void UpdateNearRoads(int x, int y)
+    {
+        
+        update_Road(x + 1, y);
+        update_Road(x - 1, y);
+        update_Road(x, y - 1);
+        update_Road(x, y + 1);
+    }
+    private void update_Road(int x, int y)
+    {
+
+        if (!IsRoad(x, y)) return;
+        bool[] direction = new bool[] { IsRoad(x, y - 1), IsRoad(x, y + 1), IsRoad(x-1, y), IsRoad(x+1, y) };
+        tileArray[x, y].GetComponent<RoadScript>().UpdateRoad(direction);
+
+
+    }
+
+    private bool IsRoad(int x, int y)
+    {
+        return (x < 0 || x > 15 || y < 0 || y > 15) || (!tileArray[x, y] || !tileArray[x, y].GetComponent<RoadScript>()) ? false : true;
+    }
     public void RotateTile(float x, float z)
     {
         Vector2Int coords = GetTileIndex(x, z);
@@ -214,9 +312,13 @@ public class LandScape : MonoBehaviour{
     {
         Vector2Int coords = GetTileIndex(x, z);
         GameObject selectedTile = tileArray[coords.x, coords.y];
-        if (selectedTile)
-        {
+        if (selectedTile) {
+            // tiles.Remove(selectedTile);
+            tiles.RemoveAll(s => s == selectedTile);
             Destroy(selectedTile);
+            tileArray[coords.x, coords.y] = null;
+            UpdateNearRoads(coords.x, coords.y);
+            UpdatePop();
         }
     }
 

@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     /**
      * Public attributes game objects.
      */
-    public static GameManager gm;
+    public static GameManager gm = null;
     public Light sun;
 
     /**
@@ -16,16 +16,16 @@ public class GameManager : MonoBehaviour
      */
     public float Income = 0.0f;
     public float Expense = 0.0f;
-    public float Money = 0.0f;
+    public float Money = 1000.0f;
     private float Happiness = 0;
     public int Population;
     public bool Bankrupt = false;
-
+    public bool game_won = false;
     /**
      * Private attributes primitives.
      */
     private float FrameTime = 0;
-    private int day = 0;
+    public int day = 0;
     private int time = 1;
     
 
@@ -38,9 +38,19 @@ public class GameManager : MonoBehaviour
     public WindowGraph moneyGraph;
     public WindowGraph populationGraph;
 
+    public GameStateOver gamestateover;
 
     void Start()
     {
+
+        if (gm == null)
+        {
+            gm = this;
+        }
+        else
+        {
+            return;
+        }
 
         /**
          * Sets the attributes.
@@ -68,6 +78,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
+        if (Bankrupt)
+        {
+            return;
+        }
         if (this.FrameTime >= 1.0f)
         {
             if (this.time >= 360)
@@ -75,7 +89,7 @@ public class GameManager : MonoBehaviour
                 NewDay();
                 this.time -= 360;
             }
-            this.sun.transform.rotation = Quaternion.Euler(new Vector3(this.time+=32, 0, 0));
+            this.sun.transform.rotation = Quaternion.Euler(new Vector3(this.time+=6, 0, 0));
             addMoney(this.Income - this.Expense);
             this.FrameTime = 0.0f;
 
@@ -128,12 +142,32 @@ public class GameManager : MonoBehaviour
 
         this.Money = (Money < 0.0f) ? 0.0f : Money;
         moneyTextFloat.text = "" + this.Money;
+
+        
+    }
+    public void SetPop(int newPop)
+    {
+        Population = newPop;
+        populationTextFloat.text = "" + this.Population;
+
+        if (Population >= 400 && !game_won)
+        {
+            gamestateover.gameObject.SetActive(true);
+            gamestateover.OpenMenu(false);
+            game_won = true;
+        }
     }
     public void addMoney(float Money = 0.0f)
     {
 
         this.Money += Money;
         moneyTextFloat.text = "" + this.Money;
+
+        if (this.Money <= 0)
+        {
+            gamestateover.gameObject.SetActive(true);
+            gamestateover.OpenMenu(true);
+        }
     }
 
     /**

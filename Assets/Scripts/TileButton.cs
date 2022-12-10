@@ -18,10 +18,17 @@ public class TileButton : MonoBehaviour
         tooltip.localPosition = new Vector3(0, 300, 0);
         
         tooltiptext = tooltip.transform.GetComponentInChildren<TextMeshProUGUI>();
-        tooltip.
+
         if (tile)
         {
-            tooltiptext.text = tile.GetComponent<BuildingScript>().ToString();
+            BuildingScript bs;
+            bs = tile.GetComponent<BuildingScript>();
+            if (bs == null)
+            {
+                bs = tile.GetComponent<RoadScript>();
+            }
+            tooltiptext.text = bs.ToString();
+            
         }
     }
 
